@@ -1,12 +1,142 @@
 <div>
 	<div class="report-feature-content" data-dojo-attach-point="content">
 		<div class="select-tab-node" data-dojo-attach-point="selectTabNode" id="selectTabNode">
-      		<div data-dojo-attach-point="selectFeatureDialogNode"></div>
+      		<!-- <div data-dojo-attach-point="selectFeatureDialogNode"></div> -->
+			  <div id="master-panel" class="master-panel">
+				<div class="panel-container">
+					<span class="panel-title">SAP INFO</span>
+				</div>
+				<div class="mst-container">
+					<label for="check-lst-typ" class="mst-item">Checklist Doc Type</label>
+					<input type="text" name="check-lst-typ" value="7" disabled class="jimu-input master-input-txt mst-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="check-lst-typ" />
+				<!-- </div>
+				<div class="mst-container"> -->
+					<label  class="mst-item" for="fiscal-yr">Fiscal Year</label>
+					<input type="text" name="fiscal-yr" value="2022" disabled class="jimu-input master-input-txt mst-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="fiscal-yr" />
+				</div>
+				<div class="mst-container">
+					<label  class="mst-item" for="c-code">Company code</label>
+					<input type="text" name="c-code" value="3440" disabled class="jimu-input master-input-txt mst-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="c-code" />
+				<!-- </div>
+				<div class="mst-container"> -->
+				<label  class="mst-item" for="vendor">Vendor</label>
+				<input type="text" name="vendor" value="17979" disabled class="jimu-input master-input-txt mst-item"
+					data-dojo-type="dijit/form/TextBox"
+					data-dojo-props="trim:true, propercase:true" id="vendor" />
+			  </div>
+			  <div class="mst-container">
+					<label  class="mst-item" for="sp-gl">Sp. G/L</label>
+					<input type="text" name="sp-gl" value="J" disabled class="jimu-input master-input-txt mst-item"
+					data-dojo-type="dijit/form/TextBox"
+					data-dojo-props="trim:true, propercase:true" id="sp-gl" />
+			  <!-- </div>
+
+			  <div class="mst-container"> -->
+				<label  class="mst-item" for="place-supply">Place of Supply</label>
+				<input type="text" name="place-supply" value="33" disabled class="jimu-input master-input-txt mst-item"
+					data-dojo-type="dijit/form/TextBox"
+					data-dojo-props="trim:true, propercase:true" id="place-supply" />
+				</div>
+
+				<div class="mst-container">
+					<label  class="mst-item" for="amount">Amount</label>
+					<input type="text" name="amount" value="1000" disabled class="jimu-input master-input-txt mst-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="amount" />
+				<!-- </div>
+				<div class="mst-container"> -->
+					<label  class="mst-item" for="tax-code">Tax Code</label>
+					<input type="text" name="tax-code" value="V0" disabled class="jimu-input master-input-txt mst-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="tax-code" />
+				</div>
+				<div class="mst-container">
+					<label  class="mst-item" for="business-plc">Business Place</label>
+					<input type="text" name="business-plc" value="1001" disabled class="jimu-input master-input-txt mst-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="business-plc" />
+				<!-- </div>
+				<div class="mst-container"> -->
+					<label  class="mst-item" for="section-c">Section code</label>
+					<input type="text" name="section-c" value="1000" disabled class="jimu-input master-input-txt mst-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="section-c" />
+				</div>
+				<div class="mst-container">
+					<label  class="mst-item" for="business-a">Business Area</label>
+					<input type="text" name="business-a" value="1000" disabled class="jimu-input master-input-txt mst-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="business-a" />
+				<!-- </div>
+				<div class="mst-container"> -->
+					<label  class="mst-item" for="due-on">Due On</label>
+					<input type="text" name="due-on" value="20.08.2022" disabled class="jimu-input master-input-txt mst-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="due-on" />
+				</div>
+				<div class="mst-container">
+					<label  class="mst-item" for="pay-ref">Payment Ref</label>
+					<input type="text" name="pay-ref" value="Land Payment" disabled class="jimu-input master-input-txt mst-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="pay-ref" />
+				<!-- </div>
+				<div class="mst-container"> -->
+					<label  class="mst-item" for="profit-cent">Profit Center</label>
+					<input type="text" name="profit-cent" value="1001000000" disabled class="jimu-input master-input-txt mst-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="profit-cent" />
+				</div>
+				<div class="mst-container">
+					<label  class="mst-item" for="wbs-ele">WBS Element</label>
+					<input type="text" name="wbs-ele" value="P-1000-02" disabled class="jimu-input master-input-txt mst-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="wbs-ele" />
+				<!-- </div>
+				<div class="mst-container"> -->
+					<label  class="mst-item" for="assignment">Assignment</label>
+					<input type="text" name="assignment" value="Land Payment" disabled class="jimu-input master-input-txt mst-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="assignment" />
+				</div>
+				<div class="mst-container">
+					<label  class="mst-item" for="txt">Text</label>
+					<input type="text" name="txt" value="Land Payment" disabled class="jimu-input master-input-txt mst-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="txt" />
+				<!-- </div>
+				<div class="mst-container"> -->
+					<label  class="mst-item" for="bank-prn-type">Bank Partner type</label>
+					<input type="text" name="bank-prn-type" value="1" disabled class="jimu-input master-input-txt mst-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="bank-prn-type" />
+				</div>
+				<div class="mst-container">
+					<label  class="mst-item" for="docu-sub-c">Document Sub Category</label>
+					<input type="text" name="docu-sub-c" value="36" disabled class="jimu-input master-input-txt mst-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="docu-sub-c" />
+				<!-- </div>
+				<div class="mst-container"> -->
+					<label  class="mst-item" for="remarks">Remarks</label>
+					<input type="text" name="remarks" value="39" disabled class="jimu-input master-input-txt mst-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="remarks" />
+				</div>
+			</div>
+
+
+
 			<div id="private" class="panel-land-type">
 				<div class="panel-container">
 					<span class="panel-title">R&R Components</span>
 				</div>
-			  <label for="housing-unit">Payment of onetime cost against housing unit to PDF</label>
+			  <!-- <label for="housing-unit">Payment of onetime cost against housing unit to PDF</label>
 			  <input type="text" name="housing-unit" value="" class="jimu-input input-txt"
 				  data-dojo-type="dijit/form/TextBox"
 				  data-dojo-props="trim:true, propercase:true" id="housing-unit" />
@@ -14,7 +144,7 @@
 			  <label for="plot-pdf">Payment of onetime cost against plot to PDF</label>
 			  <input type="text" name="plot-pdf" value="" class="jimu-input input-txt"
 				  data-dojo-type="dijit/form/TextBox"
-				  data-dojo-props="trim:true, propercase:true" id="plot-pdf" />
+				  data-dojo-props="trim:true, propercase:true" id="plot-pdf" /> -->
 
 			  <label for="emp-paf">Payment of Onetime Cost in lieu of employment to PAFs</label>
 			  <input type="text" name="emp-paf" value="" class="jimu-input input-txt"

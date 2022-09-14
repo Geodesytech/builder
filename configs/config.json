@@ -63,7 +63,7 @@
     },
 
     "widgets": [{
-      "label": "Demo",
+      "label": "SAP",
       "uri": "widgets/SAPIntegration/Widget"
     }]
   }
