@@ -2,10 +2,10 @@
 	<div class="report-feature-content" data-dojo-attach-point="content">
 		<div class="select-tab-node" data-dojo-attach-point="selectTabNode" id="selectTabNode">
       		<!-- <div data-dojo-attach-point="selectFeatureDialogNode"></div> -->
+			  <div class="panel-container">
+				  <span class="panel-title">CBA ACT</span>
+			  </div>
 			  <div id="master-panel" class="master-panel">
-				<div class="panel-container">
-					<span class="panel-title">SAP INFO</span>
-				</div>
 				<div class="mst-container">
 					<label for="check-lst-typ" class="mst-item">Checklist Doc Type</label>
 					<input type="text" name="check-lst-typ" value="7" disabled class="jimu-input master-input-txt mst-item"
@@ -130,6 +130,35 @@
 				</div>
 			</div>
 
+			<div id="private-com" class="panel-land-type">
+				<div class="panel-container">
+					<span class="panel-title">Private Land Compensation</span>
+				</div>
+				<div class="compensation-container">
+					<label for="pvt-land-com" class="compensation-item">Land Compensation</label>
+					<input type="text" name="pvt-land-com" value="" class="jimu-input compensation-input compensation-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="pvt-land-com" />
+				</div>
+				<div class="compensation-container">
+					<label for="pvt-assest-com" class="compensation-item">Asset Compensation</label>
+					<input type="text" name="pvt-assest-com" value="" class="jimu-input compensation-input compensation-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="pvt-assest-com" />
+				</div>
+				<div class="compensation-container">
+					<label for="pvt-tree-com" class="compensation-item">Tree Compensation</label>
+					<input type="text" name="pvt-tree-com" value="" class="jimu-input compensation-input compensation-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="pvt-tree-com" />
+				</div>
+				<div class="compensation-container">
+					<label for="pvt-total-com" class="compensation-item">Total Compensation</label>
+					<input type="text" name="pvt-total-com" value="" class="jimu-input compensation-input compensation-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="pvt-total-com" />
+				</div>
+			</div>
 
 
 			<div id="private" class="panel-land-type">
@@ -187,6 +216,37 @@
 				  data-dojo-type="dijit/form/TextBox"
 				  data-dojo-props="trim:true, propercase:true" id="stamp-cost" />
 			</div>
+
+			<div id="fra-com" class="panel-land-type">
+				<div class="panel-container">
+					<span class="panel-title">FRA Land Compensation</span>
+				</div>
+				<div class="compensation-container">
+					<label class="compensation-item" for="fra-land-com">Land Compensation</label>
+					<input type="text" name="fra-land-com" value="" class="jimu-input compensation-input compensation-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="fra-land-com" />
+				</div>
+				<div class="compensation-container">
+					<label class="compensation-item" for="fra-assest-com">Asset Compensation</label>
+					<input type="text" name="fra-assest-com" value="" class="jimu-input compensation-input compensation-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="fra-assest-com" />
+				</div>
+				<div class="compensation-container">
+					<label class="compensation-item" for="fra-tree-com">Tree Compensation</label>
+					<input type="text" name="fra-tree-com" value="" class="jimu-input compensation-input compensation-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="fra-tree-com" />
+				</div>
+				<div class="compensation-container">
+					<label class="compensation-item" for="fra-total-com">Total Compensation</label>
+					<input type="text" name="fra-total-com" value="" class="jimu-input compensation-input compensation-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="fra-total-com" />
+				</div>
+			</div>
+
 
 			<div id="forest" class="panel-land-type">
 				<div class="panel-container">
