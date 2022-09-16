@@ -84,7 +84,7 @@
 .panel-container {
   position: relative;
   margin-bottom: 35px;
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -141,4 +141,25 @@ label.mst-item {
   color: #085e5e;
   border-radius: 3%;
   box-shadow: 6px 7px 7px -1px rgb(0 0 0 / 40%);
+}
+
+.compensation-input {
+  width: 50%;
+  height: 25px;
+  padding-top: 8px;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.compensation-container {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.compensation-item {
+  flex-grow: 1;
+}
+
+.compensation-item+.compensation-item {
+  margin-left: 1%;
 }
